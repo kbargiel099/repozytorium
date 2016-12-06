@@ -1,0 +1,90 @@
+import javax.swing.JFrame;
+import javax.swing.JButton;
+import java.awt.Font;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class Okno {
+
+	JFrame okno;
+	JButton przycisk1,przycisk2,przycisk3,przycisk4;
+	
+	Marketing marketing;
+	projekt pr; 
+	Okno()
+	{
+		marketing = new Marketing();
+		pr = new projekt();
+		pr.dodaj(new Produkt(1,"M¹ka",20,1));
+		pr.dodaj(new Produkt(2,"P¹czek",3,1));
+		pr.dodaj(new Produkt(3,"Mas³o",5,1));
+		pr.dodaj(new Produkt(4,"Chleb",1.49,1));
+		pr.dodaj(new Produkt(5,"Pepsi",3.89,1));
+		pr.dodaj(new Produkt(6,"Czekolada",2.49,1));
+		pr.dodaj(new Produkt(7,"M¹ka",20,1));
+		pr.dodaj(new Produkt(8,"P¹czek",3,1));
+		pr.dodaj(new Produkt(9,"Mas³o",5,1));
+		pr.dodaj(new Produkt(10,"Chleb",1.49,1));
+		pr.dodaj(new Produkt(11,"Pepsi",3.89,1));
+		pr.dodaj(new Produkt(12,"Czekolada",2.49,1));
+		
+		JFrame okno = new JFrame("Marketing");
+		okno.getContentPane().setLayout(null);
+		okno.setBounds(50, 50, 400, 300);
+		//okno.setAlwaysOnTop(true);
+		okno.setVisible(true);
+		okno.getContentPane();
+		przycisk1 = new JButton("Nowa promocja");
+		przycisk1.setBounds(230, 150, 122, 25);
+		przycisk1.setFont(new Font("Yu Gothic UI", Font.PLAIN, 12));
+		przycisk1.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent arg0)
+			{
+				marketing.pobierzDaneProduktow(pr.pobierzListe());
+				marketing.utworzPromocje();
+			}
+		});
+		okno.add(przycisk1);
+		
+		przycisk2 = new JButton("Nowa ankieta");
+		przycisk2.setBounds(230, 115, 122, 25);
+		//przycisk2.setSize(120, 20);
+		przycisk2.setFont(new Font("Yu Gothic UI", Font.PLAIN, 12));
+		przycisk2.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent arg0)
+			{
+				marketing.pobierzDaneProduktow(pr.pobierzListe());
+				marketing.utworzAnkiete(); 	
+			}
+		});
+		okno.add(przycisk2);
+		
+		przycisk3 = new JButton("Zakoñcz promocjê");
+		przycisk3.setBounds(230, 220, 122, 25);
+		przycisk3.setFont(new Font("Yu Gothic UI", Font.PLAIN, 12));
+		przycisk3.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent arg0)
+			{
+				marketing.pobierzDaneProduktow(pr.pobierzListe());
+				marketing.usunPromocje(); 	
+			}
+		});
+		okno.add(przycisk3);
+		
+		przycisk4 = new JButton("Usuñ ankietê");
+		przycisk4.setBounds(230, 185, 122, 25);
+		przycisk4.setFont(new Font("Yu Gothic UI", Font.PLAIN, 12));
+		przycisk4.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent arg0)
+			{
+				marketing.pobierzDaneProduktow(pr.pobierzListe());
+				marketing.usunAnkiete(); 	
+			}
+		});
+		okno.add(przycisk4);
+	}
+}

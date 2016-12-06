@@ -1,0 +1,70 @@
+import javax.swing.JFrame;
+import javax.swing.JButton;
+import java.awt.Font;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+
+public class GUI {
+
+	private projekt pr;
+	private Marketing marketing;
+	
+	private JFrame gui;
+	private JButton przycisk1,przycisk2;
+	
+	public GUI()
+	{
+		marketing = new Marketing();
+		pr = new projekt();
+		pr.dodaj(new Produkt(1,"M¹ka",20,1));
+		pr.dodaj(new Produkt(2,"P¹czek",3,1));
+		pr.dodaj(new Produkt(3,"Mas³o",5,1));
+		pr.dodaj(new Produkt(4,"Chleb",1.49,1));
+		pr.dodaj(new Produkt(5,"Pepsi",3.89,1));
+		pr.dodaj(new Produkt(6,"Czekolada",2.49,1));
+		
+		System.out.println(wypiszProdukty());
+		JFrame gui = new JFrame("Supermarket");
+		gui.getContentPane().setLayout(null);
+		gui.setBounds(50, 50, 400, 300);
+		//okno.setAlwaysOnTop(true);
+		gui.setVisible(true);
+		//okno.getContentPane();
+		przycisk1 = new JButton("Zarz¹dzaj marketingiem");
+		przycisk1.setBounds(210, 220, 165, 35);
+		przycisk1.setFont(new Font("Yu Gothic UI", Font.PLAIN, 12));
+		przycisk1.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent arg0)
+			{
+				 //marketing.pobierzDaneProduktow(pr.pobierzListe());
+				 //marketing.inicjujOkno(GUI.this);
+			}
+		});
+		gui.add(przycisk1);
+		
+		przycisk2 = new JButton("Sprawdz");
+		przycisk2.setBounds(210, 190, 100, 30);
+		przycisk2.setFont(new Font("Yu Gothic UI", Font.PLAIN, 12));
+		przycisk2.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent arg0)
+			{
+				 System.out.println(wypiszProdukty());
+			}
+		});
+		gui.add(przycisk2);
+		
+	}
+	
+	public projekt pobierz()
+	{
+		return pr;
+	}
+	
+	public String wypiszProdukty()
+	{
+		return pr.wypiszProdukty();
+	}
+}

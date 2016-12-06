@@ -1,0 +1,68 @@
+import java.util.List;
+import java.util.ArrayList;
+public class projekt {
+
+	public static void main(String[] args) {
+		
+		Okno okno = new Okno();
+		//GUI gui = new GUI();
+		/*String indeks = new String("");
+		int i = 0;
+		String txt = new String("12    dddd");
+		
+		while(txt.charAt(i) != ' ')
+		{
+			System.out.println(Integer.parseInt(String.valueOf(txt.charAt(i))));
+			indeks = new String(indeks+txt.charAt(i));
+			i++;
+		}
+		i = Integer.parseInt(indeks);
+		System.out.println("Wartosc: "+i);
+		*/
+		
+		/*
+		Marketing marketing = new Marketing();
+		projekt pr = new projekt();
+		pr.dodaj(new Produkt(1,"M¹ka",2.99,1));
+		pr.dodaj(new Produkt(2,"P¹czek",1.49,1));
+		pr.dodaj(new Produkt(3,"Mas³o",4.89,1));
+		pr.dodaj(new Produkt(4,"Chleb",1.49,1));
+		pr.dodaj(new Produkt(5,"Pepsi",3.89,1));
+		pr.dodaj(new Produkt(6,"Czekolada",2.49,1));
+		pr.dodaj(new Produkt(7,"Bu³ka",1.49,1));
+		pr.dodaj(new Produkt(8,"Wafle",3.99,1));
+		pr.dodaj(new Produkt(9,"Mleko",2.19,1));
+		pr.dodaj(new Produkt(10,"D¿em",3.59,1));
+		pr.dodaj(new Produkt(11,"Lemoniada",1.89,1));
+		pr.dodaj(new Produkt(12,"Pomarañcze",4.49,1));
+		
+		marketing.pobierzDaneProduktow(pr.pobierzListe());
+		Produkt produkt = marketing.wybierzProdukt();
+		marketing.utworzPromocje(1,produkt,"11-30","12-30",1.49);
+		*/
+	}
+	
+		private List<Produkt> db;
+		
+		public projekt()
+		{
+			db = new ArrayList<Produkt>();
+		}
+		
+		public void dodaj(Produkt produkt)
+		{
+			db.add(produkt);
+		}
+		
+		public String wypiszProdukty()
+		{
+			return db.toString();
+		}
+		
+		
+		public List<Produkt> pobierzListe()
+		{
+			return db;
+		}
+		
+}
