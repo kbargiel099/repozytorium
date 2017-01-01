@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8859-2"?><map>
+  <entry>
+    <wspolne.Produkt>
+      <id__produktu>1</id__produktu>
+      <nazwa>Chleb</nazwa>
+      <dlugoscGwarancji>2</dlugoscGwarancji>
+      <cenaZakupu>1.49</cenaZakupu>
+      <cenaSprzedazy>1.99</cenaSprzedazy>
+      <cenaPromocyjna>1.99</cenaPromocyjna>
+      <waga>1.0</waga>
+      <ilosc>300</ilosc>
+      <dataWaznosci>2016-12-30</dataWaznosci>
+      <nr__regalu>0</nr__regalu>
+      <nr__polki>0</nr__polki>
+      <nr__miejsca>0</nr__miejsca>
+      <punkty>0</punkty>
+    </wspolne.Produkt>
+    <marketing.Promocja>
+      <id__promocji>0</id__promocji>
+      <id__produkt>0</id__produkt>
+      <stara__cena>0.0</stara__cena>
+      <nowa__cena>0.0</nowa__cena>
+    </marketing.Promocja>
+  </entry>
+  <entry>
+    <wspolne.Produkt>
+      <id__produktu>2</id__produktu>
+      <nazwa>Bułka</nazwa>
+      <dlugoscGwarancji>2</dlugoscGwarancji>
+      <cenaZakupu>1.49</cenaZakupu>
+      <cenaSprzedazy>1.99</cenaSprzedazy>
+      <cenaPromocyjna>1.99</cenaPromocyjna>
+      <waga>1.0</waga>
+      <ilosc>300</ilosc>
+      <dataWaznosci reference="../../../entry/wspolne.Produkt/dataWaznosci"/>
+      <nr__regalu>0</nr__regalu>
+      <nr__polki>0</nr__polki>
+      <nr__miejsca>0</nr__miejsca>
+      <punkty>0</punkty>
+    </wspolne.Produkt>
+    <marketing.Promocja>
+      <id__promocji>0</id__promocji>
+      <id__produkt>0</id__produkt>
+      <stara__cena>0.0</stara__cena>
+      <nowa__cena>0.0</nowa__cena>
+    </marketing.Promocja>
+  </entry>
+  <entry>
+    <wspolne.Produkt>
+      <id__produktu>3</id__produktu>
+      <nazwa>Lemoniada</nazwa>
+      <dlugoscGwarancji>2</dlugoscGwarancji>
+      <cenaZakupu>1.49</cenaZakupu>
+      <cenaSprzedazy>1.99</cenaSprzedazy>
+      <cenaPromocyjna>1.99</cenaPromocyjna>
+      <waga>1.0</waga>
+      <ilosc>300</ilosc>
+      <dataWaznosci reference="../../../entry/wspolne.Produkt/dataWaznosci"/>
+      <nr__regalu>0</nr__regalu>
+      <nr__polki>0</nr__polki>
+      <nr__miejsca>0</nr__miejsca>
+      <punkty>0</punkty>
+    </wspolne.Produkt>
+    <marketing.Promocja>
+      <id__promocji>1</id__promocji>
+      <id__produkt>3</id__produkt>
+      <od__kiedy>2016-12-29 16:00:00.0 UTC</od__kiedy>
+      <do__kiedy>2016-12-29 16:00:00.0 UTC</do__kiedy>
+      <stara__cena>1.99</stara__cena>
+      <nowa__cena>2.23</nowa__cena>
+    </marketing.Promocja>
+  </entry>
+</map>
