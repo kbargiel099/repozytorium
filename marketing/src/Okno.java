@@ -31,6 +31,7 @@ public class Okno {
 		pr.dodaj(new Produkt(14,"costam2",4.49,4.49,1));
 		pr.dodaj(new Produkt(15,"costam3",4.49,4.49,1));
 		pr.dodaj(new Produkt(15,"costam4",4.49,4.49,1));
+		pr.dodaj(new Produkt(15,"costam5",4.49,4.49,1));
 		
 		JFrame okno = new JFrame("Marketing");
 		okno.getContentPane().setLayout(null);
