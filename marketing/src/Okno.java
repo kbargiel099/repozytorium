@@ -27,10 +27,7 @@ public class Okno {
 		pr.dodaj(new Produkt(10,"D¿em",3.59,3.59,1));
 		pr.dodaj(new Produkt(11,"Lemoniada",1.89,1.89,1));
 		pr.dodaj(new Produkt(12,"Pomarañcze",4.49,4.49,1));
-<<<<<<< HEAD
-
-=======
->>>>>>> 4c004c2299cec09950b9ddf1f93f7869def386a2
+			pr.dodaj(new Produkt(12,"Pomarañcze",4.49,4.49,1));
 		
 		JFrame okno = new JFrame("Marketing");
 		okno.getContentPane().setLayout(null);
